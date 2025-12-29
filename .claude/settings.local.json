@@ -5,7 +5,10 @@
       "Bash(cmdkey /list:*)",
       "Bash(findstr:*)",
       "Bash(git push:*)",
-      "Bash(git config:*)"
+      "Bash(git config:*)",
+      "Bash(git ls-tree:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
