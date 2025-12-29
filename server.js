@@ -17,7 +17,8 @@ let facilitiesData = [];
 
 function loadFacilitiesData() {
     try {
-        const data = fs.readFileSync('./data/facilitiesNew.json', 'utf8');
+        const dataPath = path.join(__dirname, 'data', 'facilitiesNew.json');
+        const data = fs.readFileSync(dataPath, 'utf8');
         facilitiesData = JSON.parse(data);
         console.log(`Loaded ${facilitiesData.length} medical facilities`);
     } catch (error) {
